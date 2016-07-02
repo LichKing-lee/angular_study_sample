@@ -23,7 +23,6 @@ app.controller("mainCtrl", function($scope){
             $scope.func = function(){
                 return "hello function";
             };
-            $scope.priority = "first test";
         },
         compile : function(element, attrs){
             console.log(element);
