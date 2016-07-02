@@ -25,14 +25,19 @@ app.controller("mainCtrl", function($scope){
             };
             $scope.priority = "first test";
         },
-        link : {
-            pre : function(scope){
-                scope.preTest = "hello link pre";
-                scope.linkTest = "hello pre";
-            },
-            post : function(scope){
-                scope.postTest = "hello link post";
-                scope.linkTest = "hello post";
+        compile : function(element, attrs){
+            console.log(element);
+            console.log(attrs);
+
+            return {
+                pre : function(scope){
+                    scope.preTest = "hello link pre";
+                    scope.linkTest = "hello pre";
+                },
+                post : function(scope){
+                    scope.postTest = "hello link post";
+                    scope.linkTest = "hello post";
+                }
             }
         },
         transclude : true
