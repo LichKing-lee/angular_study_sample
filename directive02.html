@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MyApp01">
+<html lang="en" ng-app="MyApp02">
 <head>
     <meta charset="UTF-8">
     <script src="bower_components/angular/angular.js"></script>
-    <script src="js/app01.js"></script>
+    <script src="js/app02.js"></script>
 </head>
 <body ng-controller="mainCtrl">
-    <textarea ng-model="binding"></textarea>
-    <div my-directive01 func="function01(param)" test="binding"></div>
+    <div my-directive01></div>
     <div my-directive02></div>
+    <div my-directive01 my-directive02></div>
 </body>
 </html>

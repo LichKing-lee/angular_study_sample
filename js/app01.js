@@ -6,7 +6,7 @@ app.controller("mainCtrl", function($scope){
     $scope.function01 = function(param){
         return "hello first function param => [" + param + "]";
     };
-    $scope.binding = "yong";
+    $scope.binding = "부모를 바꾸든 자식을 바꾸든 양쪽 다 바껴요 이것이 양방향 아니겠습니까";
 }).directive("myDirective01", function(){
     return {
         replace : true,
@@ -35,7 +35,6 @@ app.controller("mainCtrl", function($scope){
                 scope.linkTest = "hello post";
             }
         },
-        priority : 5
     }
 }).directive("myDirective02", function(){
     return {
@@ -44,6 +43,5 @@ app.controller("mainCtrl", function($scope){
         controller : function($scope){
             $scope.priority = "second test";
         },
-        priority : 10
     }
 });
