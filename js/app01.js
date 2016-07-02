@@ -34,14 +34,6 @@ app.controller("mainCtrl", function($scope){
                 scope.postTest = "hello link post";
                 scope.linkTest = "hello post";
             }
-        },
-    }
-}).directive("myDirective02", function(){
-    return {
-        templateUrl : "template/template02.html",
-        scope : true,
-        controller : function($scope){
-            $scope.priority = "second test";
-        },
+        }
     }
 });
