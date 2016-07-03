@@ -15,10 +15,8 @@ controller("mainCtrl", function($scope){
     }
 }).directive("myDirective02", function(){
     return {
-        compile : function(){
-            return function(scope, element){
-                element.text("second test!");
-            }
+        link : function(scope, element){
+            element.text("second test!");
         },
         priority : 10
     }
